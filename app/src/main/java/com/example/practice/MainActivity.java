@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void sendMessage(View view)//View: View)
@@ -26,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
        String message = editText.getText().toString();
        intent.putExtra(EXTRA_MESSAGE,message);
        startActivity(intent);
+       System.out.println("heck");
     }
 }
